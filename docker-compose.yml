@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - IPMA_BASE_URL=https://api.ipma.pt/open-data
+    restart: unless-stopped
